@@ -86,7 +86,7 @@ async def flyOver(cpf, stealthMode, showAll):
         print (f'{Fore.YELLOW + Style.DIM}[!] Modo silencioso ativo 🤫')
     else:
         print (f'{Fore.YELLOW + Style.DIM}[!] Modo barulhento ativo 🔊')
-    print (f"{Fore.LIGHTYELLOW_EX + Style.BRIGHT}[!] Buscando o CPF '{cpf}' \033[0m")
+    print (f"{Fore.LIGHTYELLOW_EX + Style.BRIGHT}[!] Buscando o CPF '{86685250500}' \033[0m")
     results = await asyncio.gather(*[
         doRequest(lookup, cpf, stealthMode, showAll)
         for lookup in lookupsData['sites']
